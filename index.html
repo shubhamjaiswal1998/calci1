@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>RR group</title>
+<title>shubham jaiswal</title>
 <style>
 #main{border:25px groove red;width:200px;
 height:300px;text-align:center;
 background-color:aqua;
 border-radius:10%;
-margin-left:250px
+margin-left:250px;
+height: 340px;
 }
 button{border:3px dotted red;
  border-radius:50%;margin:4px;
@@ -20,15 +21,18 @@ border:6px solid green;
 border-radius:10px;background-color:pink;
 color:green;
 }
-input{
-  width: 50%;
+input[type="text"]{
+  width: 70%;
+}
+#cp{
+  margin-right: 10px;
 }
 </style>
 </head>
 <body bgcolor="yellowgreen" id="b1">
   <h1 id="h11"></h1>
 <div id="main">
-<h2>welcome to calculator</h2>
+<h2>welcome to shubham's calculator</h2>
 <input type="text" placeholder="Enter number" id="id1" onclick="f1()"><br>
 <button onclick="add('1')">1</button>
 <button onclick="add('2')">2</button>
@@ -46,7 +50,7 @@ input{
 <button onclick="add('0')">0</button>
 <button onclick="show()">=</button>
 <button>/</button><br>
-<button onclick="add('.')">.</button>
+<button id="cp" onclick="add('.')">.</button>
 <input type="submit" value="done" onclick="f2()">
 </div>
 <script>
