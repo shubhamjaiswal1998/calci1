@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RR group</title>
+<style>
+#main{border:25px groove red;width:200px;
+height:300px;text-align:center;
+background-color:aqua;
+border-radius:10%;
+margin-left:250px
+}
+button{border:3px dotted red;
+ border-radius:50%;margin:4px;
+  height:30px;width:30px
+}
+button:hover{
+border:6px solid green;
+}
+#id1{border:2px solid black;
+border-radius:10px;background-color:pink;
+color:green;
+}
+input{
+  width: 50%;
+}
+</style>
+</head>
+<body bgcolor="yellowgreen" id="b1">
+  <h1 id="h11"></h1>
+<div id="main">
+<h2>welcome to calculator</h2>
+<input type="text" placeholder="Enter number" id="id1" onclick="f1()"><br>
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('3')">3</button>
+<button onclick="add('+')">+</button><br>
+<button onclick="add('4')">4</button>
+<button onclick="add('5')">5</button>
+<button onclick="add('6')">6</button>
+<button onclick="add('-')">-</button><br>
+<button onclick="add('7')">7</button>
+<button onclick="add('8')">8</button>
+<button onclick="add('9')">9</button>
+<button onclick="add('*')">*</button><br>
+<button onclick="clear1()">C</button>
+<button onclick="add('0')">0</button>
+<button onclick="show()">=</button>
+<button>/</button><br>
+<button onclick="add('.')">.</button>
+<input type="submit" value="done" onclick="f2()">
+</div>
+<script>
+let in_put=document.getElementById("id1")
+function add(n){
+ in_put.value=in_put.value+n
+}
+function show() {
+  in_put.value=eval(in_put.value)
+}
+function clear1(){
+  in_put.value=''
+}
+function f2() {
+  let r1=document.getElementById("b1")
+  r1.innerHTML="<h1>HAPPY DIWALI</h1>"
+  r1.style.textAlign="center"
+  r1.style.marginTop="100px"
+}
+</script>
+</body>
+</html>
